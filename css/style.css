@@ -1,0 +1,44 @@
+.question {
+	padding-top: 50px;
+}
+.section {
+	display: none;
+}
+#home {
+	display: block;
+}
+.phone_title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.phone_thumbnail {
+	text-align: center;
+}
+.phone_thumbnail  img {
+	height: 150px;
+}
+.phone div span {
+	font-weight: bold;
+}
+#overlay {
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	z-index: 10000;
+	overflow: hidden;
+}
+#phone_details {
+	background: #FFF;
+	max-width: 600px;
+	padding: 20px;
+	margin: 100px auto 0 auto;
+}
+#phone_details img{
+	width: 100%;
+	height: auto;
+}
+
+
