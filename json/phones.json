@@ -1,32 +1,44 @@
 {
-    "phones": [
-		{
-			"name": "Sony Xperia Z3",
-			"manufacturer": "Sony",
-			"storage": "16 GB",
-			"os": "Android",
-			"camera": "15 Mpx"
-		},
-		{
-			"name": "iPhone 6",
-			"manufacturer": "Apple",
-			"storage": "16 GB",
-			"os": "iOS",
-			"camera": "8 Mpx"
-		},
-		{
-			"name": "HTC One M8",
-			"manufacturer": "HTC",
-			"storage": "32 GB",
-			"os": "Android",
-			"camera": "5 Mpx"
-		},
-		{
-			"name": "Galaxy Alpha",
-			"manufacturer": "Samsung",
-			"storage": "32 GB",
-			"os": "Android",
-			"camera": "12 Mpx"
-		}
-	]
-}
+		"phones": [
+			{
+				"id": 1,
+				"image": "images/sony-xperia-z3.jpg",
+				"image_large": "images/sony-xperia-z3-large.jpg",
+				"name": "Sony Xperia Z3",
+				"manufacturer": "Sony",
+				"storage": "16 GB",
+				"os": "Android",
+				"camera": "15 Mpx"
+			},
+			{
+				"id": 2,
+				"image": "images/iphone6.jpg",
+				"image_large": "images/iphone6-large.jpg",
+				"name": "iPhone 6",
+				"manufacturer": "Apple",
+				"storage": "16 GB",
+				"os": "iOS",
+				"camera": "8 Mpx"
+			},
+			{
+				"id": 3,
+				"image": "images/htc-one.jpg",
+				"image_large": "images/htc-one-large.jpg",
+				"name": "HTC One M8",
+				"manufacturer": "HTC",
+				"storage": "32 GB",
+				"os": "Android",
+				"camera": "5 Mpx"
+			},
+			{
+				"id": 4,
+				"image": "images/galaxy-alpha.jpg",
+				"image_large": "images/galaxy-alpha-large.jpg",
+				"name": "Galaxy Alpha",
+				"manufacturer": "Samsung",
+				"storage": "32 GB",
+				"os": "Android",
+				"camera": "12 Mpx"
+			}
+		]
+	}
