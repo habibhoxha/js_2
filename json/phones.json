@@ -1,0 +1,32 @@
+{
+    "phones": [
+		{
+			"name": "Sony Xperia Z3",
+			"manufacturer": "Sony",
+			"storage": "16 GB",
+			"os": "Android",
+			"camera": "15 Mpx"
+		},
+		{
+			"name": "iPhone 6",
+			"manufacturer": "Apple",
+			"storage": "16 GB",
+			"os": "iOS",
+			"camera": "8 Mpx"
+		},
+		{
+			"name": "HTC One M8",
+			"manufacturer": "HTC",
+			"storage": "32 GB",
+			"os": "Android",
+			"camera": "5 Mpx"
+		},
+		{
+			"name": "Galaxy Alpha",
+			"manufacturer": "Samsung",
+			"storage": "32 GB",
+			"os": "Android",
+			"camera": "12 Mpx"
+		}
+	]
+}
