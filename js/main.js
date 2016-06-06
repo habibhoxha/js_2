@@ -140,6 +140,78 @@ $(document).ready(function(){
 		$("#phone_list").append(html);
 	}
 
-	
+
+
+
+		$.getJSON("http://jsonplaceholder.typicode.com/users", function(data){
+			var users = data;
+			console.log(users);
+
+			var html = '<ul>';
+
+			for(var i=0; i<users.length; i++) {
+				var user = users[i];
+				html += '<li class="usr" data-user-id="'+user.id+'">'+user.username+'</li>';
+			}
+
+			html += '</ul>';
+
+			$("#users_list").append(html);
+
+
+		});
+
+		$( document ).on( "click", "ul li.usr", function() {
+			var user_id = $(this).attr("data-user-id");
+			var url = "http://jsonplaceholder.typicode.com/posts?userId="+user_id;
+
+			$("#posts_list").html("Loading...");
+
+
+			$.getJSON(url, function(data){
+				var posts = data;
+				console.log(posts);
+
+				var html = '<ul>';
+
+				for(var i=0; i<posts.length; i++) {
+					var post = posts[i];
+					html += '<li class="post" data-post-id="'+post.id+'">'+post.title+'</li>';
+				}
+
+				html += '</ul>';
+
+				$("#posts_list").html(html);
+
+			}).done(function(){
+				$("#comments_list").html("");
+			});
+		});
+
+	$( document ).on( "click", "ul li.post", function() {
+		var post_id = $(this).attr("data-post-id");
+		var url = "http://jsonplaceholder.typicode.com/comments?postId="+post_id;
+
+		$("#comments_list").html("Loading...");
+		$.getJSON(url, function(data){
+			var comments = data;
+			console.log(comments);
+
+			var html = '<ul>';
+
+			for(var i=0; i<comments.length; i++) {
+				var comment = comments[i];
+				html += '<li class="comment" data-comment-id="'+comment.id+'">';
+				html += '<div class="comment_name">'+comment.name+'</div>';
+				html += '<div class="comment_body">'+comment.body+'</div>';
+				html += '</li>';
+			}
+
+			html += '</ul>';
+
+			$("#comments_list").html(html);
+
+		});
+	});
 
 });
